@@ -1,0 +1,14 @@
+:root {
+    --container: 1270px;
+    --no-radius: 0;
+    --form-border: #e0e0e0;
+    --primary-color: #0092d4;
+    --form-label: #54595f;
+    --primary-btn: #47a4de;
+    --primary-btn-hover: #80be43;
+    --hover-text: #80be43;
+    --card-radius: 15px;
+    --sidebar-width: 280px;
+    --sidebar-color: #FAFBFF;
+    --sidebar-nav-selected: #bfe9fd;
+}

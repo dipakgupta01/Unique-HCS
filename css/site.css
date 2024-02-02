@@ -1,0 +1,211 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}*/
+
+/* Provide sufficient contrast against white background */
+/*a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+/*.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}*/
+
+@media (min-width: 1200px) {
+    .width-20 {
+        width: 20%;
+    }
+    .width-40 {
+        width: 40%;
+    }
+}
+.e-upload {
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.document-upload .e-upload {
+    margin: 0;
+    border: 0;
+}
+
+    .document-upload .e-upload .e-file-select-wrap {
+        border: 1px solid rgba(0,0,0,.24);
+        padding: 10px 12px;
+        border-radius: 4px;
+    }
+
+        .document-upload .e-upload .e-file-select-wrap .e-file-select {
+            height: 0;
+        }
+
+    .document-upload .e-upload .e-file-select-wrap .e-css.e-btn {
+        /*background-color: #80be43;
+        color: #ffffff;
+        box-shadow: none;*/
+        padding: 8px 15px;
+    }
+
+    .e-checkbox-wrapper .e-label {
+        font-size: 0.9rem;
+    }
+
+.document-upload.e-upload-drag-hover .e-upload .e-file-select-wrap {
+    border: 1px dashed #5664d2;
+    background-color: #f1f5f7;
+    border-radius: 5px;
+}
+
+.document-upload .e-upload-files {
+    border-top: 0;
+}
+
+    .document-upload .e-upload-files .e-upload-file-list {
+        margin: 10px 0;
+        background: #FAFBFF;
+        border: 1px solid #eeeeee;
+        border-radius: 5px;
+    }
+
+.textbox-input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.textbox-input-group .e-input-group {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+
+    .textbox-input-group .e-input-group:not(:first-child) {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+    .textbox-input-group .e-input-group:not(:last-child) {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    .textbox-input-group .e-input-group-text {
+        color: #495057;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #e9ecef;
+        border: 1px solid rgba(0,0,0,.24);
+        border-radius: 4px;
+        padding: 10px 12px 9px;
+        display: flex;
+        align-items: center;
+    }
+    .textbox-input-group .e-input-group-append {
+        margin-left: -1px;
+    }
+        .textbox-input-group .e-input-group-append .e-input-group-text {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-left: 0;
+        }
+
+    .textbox-input-group .e-input-group-prepend {
+        margin-right: -1px;
+        
+    }
+        .textbox-input-group .e-input-group-prepend .e-input-group-text {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: 0;
+        }
+
+.e-richtexteditor {
+    min-height: 170px;
+    max-height: 480px;
+}
+.profile-pic-box {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.profile-pic {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: #f1f5f7;
+    border: 1px solid #d1d1d1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-pic-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#upload-button {
+    margin-left: 20px
+}
+
+   

@@ -1,0 +1,169 @@
+<form id="emergencyContactForm" method="get" action="" autocomplete="off">
+    <div class="card">
+        <div class="card-header bg-white px-4 py-3">
+            <h5 class="card-title mb-0">Contact 1</h5>
+        </div>
+        <div class="card-body p-4">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="ecfirstname" class="form-label">First Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control front-form-control" id="ecfirstname" name="ecfirstname" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="ecmiddlename" class="form-label">Middle Name</label>
+                        <input type="text" class="form-control front-form-control" id="ecmiddlename" name="ecmiddlename" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="eclastname" class="form-label">Last Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control front-form-control" id="eclastname" name="eclastname" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="echomephone" class="form-label">Home Phone <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control front-form-control" id="echomephone" name="echomephone" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="eccellphone" class="form-label">Cell Phone <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control front-form-control" id="eccellphone" name="eccellphone" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="ecemail" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control front-form-control" id="ecemail" name="ecemail" required>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header bg-white px-4 py-3">
+            <h5 class="card-title mb-0">Contact 2</h5>
+        </div>
+        <div class="card-body p-4">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="ec2firstname" class="form-label">First Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control front-form-control" id="ec2firstname" name="ec2firstname" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="ec2middlename" class="form-label">Middle Name</label>
+                        <input type="text" class="form-control front-form-control" id="ec2middlename" name="ec2middlename" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="ec2lastname" class="form-label">Last Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control front-form-control" id="ec2lastname" name="ec2lastname" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="ec2homephone" class="form-label">Home Phone <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control front-form-control" id="ec2homephone" name="ec2homephone" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="ec2cellphone" class="form-label">Cell Phone <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control front-form-control" id="ec2cellphone" name="ec2cellphone" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="ec2email" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control front-form-control" id="ec2email" name="ec2email" required>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div class="form-group text-end">
+        <input type="submit" value="Next" class="btn btn-primary form-button">
+        <input type="submit" value="Save & Exit" class="btn btn-success form-button">
+    </div>
+</form>
+<script>
+    $.validator.setDefaults({
+        submitHandler: function() {
+            window.location.href = "index.html";
+        }
+    });
+
+    $(document).ready(function() {   
+        // validate emergency contact form on keyup and submit
+        $("#emergencyContactForm").validate({
+            rules: {                    
+                ecfirstname: "required",
+                eclastname: "required",
+                echomephone: {
+                    minlength: 10,
+                    maxlength: 10 
+                },
+                eccellphone: {
+                    minlength: 10,
+                    maxlength: 10 
+                },
+                ecemail: {
+                    required: true,
+                    email: true
+                },
+
+                ec2firstname: "required",
+                ec2lastname: "required",
+                ec2homephone: {
+                    minlength: 10,
+                    maxlength: 10 
+                },
+                ec2cellphone: {
+                    minlength: 10,
+                    maxlength: 10 
+                },
+                ec2email: {
+                    required: true,
+                    email: true
+                },
+                
+            },
+            messages: {
+                echomephone: {
+                    minlength: "Please enter exactly 10 digits",
+                    maxlength: "Please enter exactly 10 digits"
+                },
+                eccellphone: {
+                    minlength: "Please enter exactly 10 digits",
+                    maxlength: "Please enter exactly 10 digits"
+                },
+                ec2homephone: {
+                    minlength: "Please enter exactly 10 digits",
+                    maxlength: "Please enter exactly 10 digits"
+                },
+                ec2cellphone: {
+                    minlength: "Please enter exactly 10 digits",
+                    maxlength: "Please enter exactly 10 digits"
+                }
+            },           
+        });
+         
+        // input mask
+        $('#echomephone').inputmask("(999) 999-9999");
+        $('#eccellphone').inputmask("(999) 999-9999");
+
+        $('#ec2homephone').inputmask("(999) 999-9999");
+        $('#ec2cellphone').inputmask("(999) 999-9999");
+    });
+
+    
+    </script>

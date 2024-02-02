@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique App - Login</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+     <link href="css/custom.css" rel="stylesheet" type="text/css" />
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+     
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white front-header">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://staging.faithcareus.com/wp-content/uploads/2021/11/logo.png" alt="faithcareus">
+            </a>            
+        </div>
+    </nav>
+    <div class="container-fluid my-3 my-md-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 auth-col">
+                <div class="card">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="text-center mb-5">
+                            <h4 class="mb-3 text-center fw-bold">Login</h4>
+                            <p class="mb-0 text-secondary">Enter your email address and password to login your account</p>
+                        </div>
+                        <form id="loginForm" method="get" action="" autocomplete="off">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control front-form-control" id="email" name="email" required autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control front-form-control" id="password" name="password" required autocomplete="new-password">
+                            </div>
+                            <div class="form-group text-end">
+                                <a href="forgot-password.html" class="small fw-semibold hover-text">Forgot Password?</a>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Login" class="btn btn-primary w-100">
+                            </div>
+                            <div class="form-group text-center mb-0">
+                                <span class="small">Don't have an account? <a href="signup.html" class="fw-semibold hover-text">Sign Up</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/jqueryvalidation/jquery.validate.min.js"></script>
+    <script>
+        $.validator.setDefaults({
+            submitHandler: function() {
+                window.location.href = "hsc.html";
+            }
+        });
+    
+        $().ready(function() {
+            $("#loginForm").validate({
+                rules: {                    
+                    password: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                },
+            });
+    
+        });
+        </script>
+</body>
+</html>

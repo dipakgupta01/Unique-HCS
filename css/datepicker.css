@@ -1,0 +1,24 @@
+.datepicker th, .datepicker td{
+    width: 40px;
+    height: 40px;
+}
+.datepicker .datepicker-switch, .datepicker th{
+    font-weight: 500;
+}
+.datepicker table tr td.active, 
+.datepicker table tr td.active:hover,
+.datepicker table tr td.today, 
+.datepicker table tr td.today:hover,
+.datepicker table tr td span.month.active, 
+.datepicker table tr td span.month.active:hover,
+.datepicker table tr td span.year.active, 
+.datepicker table tr td span.year.active:hover,
+.datepicker table tr td span.decade.active, 
+.datepicker table tr td span.decade.active:hover,
+.datepicker table tr td span.century.active, 
+.datepicker table tr td span.century.active:hover
+{
+    background-color: var(--primary-color) !important;
+    background-image: none;
+    color: #ffffff;
+}
